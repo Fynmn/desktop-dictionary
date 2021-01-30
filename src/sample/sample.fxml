@@ -1,0 +1,24 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<VBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <HBox alignment="center" style="-fx-padding: 10 0 10 0;">
+        <Label text="Search Word:  " />
+        <TextField fx:id="wordToSearch" onAction="#getWord"/>
+        <Label text=" "/>
+        <Button text="Search" style="-fx-background-color: #0275dB; -fx-text-fill: white;" onAction="#btn_search"/>
+    </HBox>
+    <HBox alignment="center" style="-fx-padding: 15 0 0 0; -fx-font-size: 17; -fx-font-weight: bold">
+        <Label>Meaning of</Label>
+        <Label text=" '"/>
+        <Label fx:id="wordInMeaning"/>
+        <Label text="'"/>
+    </HBox>
+    <VBox>
+        <Label fx:id="firstMeaning" style="-fx-max-width: 590; -fx-wrap-text: true; -fx-padding: 15 0 0 10;">
+        </Label>
+    </VBox>
+</VBox>

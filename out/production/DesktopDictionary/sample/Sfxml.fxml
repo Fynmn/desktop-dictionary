@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.Sfxml"
+      prefHeight="400.0" prefWidth="600.0">
+    <HBox alignment="center" style="-fx-padding: 10 0 0 0;">
+        <Label text="Meaning"/>
+    </HBox>
+
+    <VBox>
+
+        <Label fx:id="fMeaning" style="-fx-max-width: 490; -fx-wrap-text: true; -fx-padding: 15 0 0 10;">
+        </Label>
+        <Label fx:id="sMeaning" style="-fx-max-width: 490; -fx-wrap-text: true; -fx-padding: 0 0 0 10;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </Label>
+
+    </VBox>
+
+</VBox>
